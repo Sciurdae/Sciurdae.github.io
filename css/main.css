@@ -836,7 +836,7 @@ i.iconfont {
   --color-mode: "light";
   --body-bg-color: #eee;
   --board-bg-color: #ffffff89;
-  --text-color: #004466;
+  --text-color: #000000;
   --sec-text-color: #004466;
   --post-text-color: #006400;
   --post-heading-color: #8B0000;
@@ -853,7 +853,7 @@ i.iconfont {
   --button-hover-bg-color: #f2f3f5;
   --highlight-bg-color: #f6f8fa;
   --inlinecode-bg-color: rgba(175,184,193,0.2);
-  --fold-title-color: #004466;
+  --fold-title-color: #000000;
   --fold-border-color: #eaecef;
 }
 @media (prefers-color-scheme: dark) {
