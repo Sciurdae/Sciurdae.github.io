@@ -263,14 +263,14 @@
       <h2 class="index-header">
         
         <a href="/2024/04/02/Windows%E5%86%85%E6%A0%B8%E5%9F%BA%E7%A1%80/" target="_self">
-          
+          Windosw内核理论基础
         </a>
       </h2>
 
       
       <a class="index-excerpt index-excerpt__noimg" href="/2024/04/02/Windows%E5%86%85%E6%A0%B8%E5%9F%BA%E7%A1%80/" target="_self">
         <div>
-          [TOC] Windosw内核 理论基础Windows体系结构CPU权限级别系统内核层，又称零环（Ring0，简称R0；与此对应的是3环，R3，应用层）；实际上是CPU的4个级别，CPU在设计时将CPU的运行级别从内到外分为4个层级R0-R3，R0权限最高依次降低（实际上，现在只区分R0和R3，并没有使用R1和R2）。  分级的目的是为了保护系统的稳定性和安全性。通过限制某些操作只能在高权限级别下
+          Windosw内核理论基础Windows体系结构CPU权限级别系统内核层，又称零环（Ring0，简称R0；与此对应的是3环，R3，应用层）；实际上是CPU的4个级别，CPU在设计时将CPU的运行级别从内到外分为4个层级R0-R3，R0权限最高依次降低（实际上，现在只区分R0和R3，并没有使用R1和R2）。  分级的目的是为了保护系统的稳定性和安全性。通过限制某些操作只能在高权限级别下执行，操作系统
         </div>
       </a>
 
@@ -296,14 +296,14 @@
       <h2 class="index-header">
         
         <a href="/2024/04/02/Windows%E5%8F%8D%E8%B0%83%E8%AF%95%E6%8A%80%E6%9C%AF/" target="_self">
-          
+          Windows反调试技术
         </a>
       </h2>
 
       
       <a class="index-excerpt index-excerpt__noimg" href="/2024/04/02/Windows%E5%8F%8D%E8%B0%83%E8%AF%95%E6%8A%80%E6%9C%AF/" target="_self">
         <div>
-          [TOC] Windows反调试通过 API 调用IsDebuggerPresentIsDebuggerPresent函数通过获取进程环境块（PEB）中的BeingDebugged标志来检测进程是否处于调试状态。 其实现代码： 1234BOOL WINAPI IsDebuggerPresent(VOID)&#123;	return NtCurrentPeb() -&gt; BeingDebugge
+          Windows反调试通过 API 调用IsDebuggerPresentIsDebuggerPresent函数通过获取进程环境块（PEB）中的BeingDebugged标志来检测进程是否处于调试状态。 其实现代码： 1234BOOL WINAPI IsDebuggerPresent(VOID)&#123;	return NtCurrentPeb() -&gt; BeingDebugged;&#12
         </div>
       </a>
 
