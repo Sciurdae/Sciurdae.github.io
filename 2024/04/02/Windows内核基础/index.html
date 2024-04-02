@@ -18,12 +18,12 @@
   <meta name="author" content="Sciurdae">
   <meta name="keywords" content="">
   
-    <meta name="description" content="--- title: Windosw内核理论基础 --- # Windosw内核理论基础  Windows体系结构CPU权限级别系统内核层，又称零环（Ring0，简称R0；与此对应的是3环，R3，应用层）；实际上是CPU的4个级别，CPU在设计时将CPU的运行级别从内到外分为4个层级R0-R3，R0权限最高依次降低（实际上，现在只区分R0和R3，并没有使用R1和R2）。  分级的目的是为了保护系">
+    <meta name="description" content="title: Windosw内核理论基础Windosw内核理论基础Windows体系结构CPU权限级别系统内核层，又称零环（Ring0，简称R0；与此对应的是3环，R3，应用层）；实际上是CPU的4个级别，CPU在设计时将CPU的运行级别从内到外分为4个层级R0-R3，R0权限最高依次降低（实际上，现在只区分R0和R3，并没有使用R1和R2）。  分级的目的是为了保护系统的稳定性和安全性。通">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Sciurdae&#39;s 小窝">
 <meta property="og:url" content="http://sciurdae.online/2024/04/02/Windows%E5%86%85%E6%A0%B8%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Sciurdae&#39;s 小窝">
-<meta property="og:description" content="--- title: Windosw内核理论基础 --- # Windosw内核理论基础  Windows体系结构CPU权限级别系统内核层，又称零环（Ring0，简称R0；与此对应的是3环，R3，应用层）；实际上是CPU的4个级别，CPU在设计时将CPU的运行级别从内到外分为4个层级R0-R3，R0权限最高依次降低（实际上，现在只区分R0和R3，并没有使用R1和R2）。  分级的目的是为了保护系">
+<meta property="og:description" content="title: Windosw内核理论基础Windosw内核理论基础Windows体系结构CPU权限级别系统内核层，又称零环（Ring0，简称R0；与此对应的是3环，R3，应用层）；实际上是CPU的4个级别，CPU在设计时将CPU的运行级别从内到外分为4个层级R0-R3，R0权限最高依次降低（实际上，现在只区分R0和R3，并没有使用R1和R2）。  分级的目的是为了保护系统的稳定性和安全性。通">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://gitee.com/Sciurdae/typora-images/raw/master/img/202401021844608.png">
 <meta property="og:image" content="https://gitee.com/Sciurdae/typora-images/raw/master/img/202312261638491.png">
@@ -45,7 +45,7 @@
 <meta property="og:image" content="https://gitee.com/Sciurdae/typora-images/raw/master/img/202312262020779.png">
 <meta property="og:image" content="https://gitee.com/Sciurdae/typora-images/raw/master/img/202401041702378.png">
 <meta property="article:published_time" content="2024-04-02T12:24:57.713Z">
-<meta property="article:modified_time" content="2024-04-02T12:54:59.415Z">
+<meta property="article:modified_time" content="2024-04-02T12:58:48.960Z">
 <meta property="article:author" content="Sciurdae">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://gitee.com/Sciurdae/typora-images/raw/master/img/202401021844608.png">
@@ -339,12 +339,9 @@
               <div class="markdown-body">
                 
                 <meta name="referrer" content="no-referrer"/>
----
-title: Windosw内核理论基础
----
-# Windosw内核理论基础
 
-<h2 id="Windows体系结构"><a href="#Windows体系结构" class="headerlink" title="Windows体系结构"></a>Windows体系结构</h2><h3 id="CPU权限级别"><a href="#CPU权限级别" class="headerlink" title="CPU权限级别"></a>CPU权限级别</h3><p><strong>系统内核层</strong>，又称<strong>零环</strong>（Ring0，简称R0；与此对应的是<strong>3环</strong>，R3，应用层）；实际上是CPU的4个级别，CPU在设计时将CPU的运行级别从内到外分为4个层级R0-R3，R0权限最高依次降低（实际上，现在只区分R0和R3，并没有使用R1和R2）。</p>
+<hr>
+<h2 id="title-Windosw内核理论基础"><a href="#title-Windosw内核理论基础" class="headerlink" title="title: Windosw内核理论基础"></a>title: Windosw内核理论基础</h2><h1 id="Windosw内核理论基础"><a href="#Windosw内核理论基础" class="headerlink" title="Windosw内核理论基础"></a>Windosw内核理论基础</h1><h2 id="Windows体系结构"><a href="#Windows体系结构" class="headerlink" title="Windows体系结构"></a>Windows体系结构</h2><h3 id="CPU权限级别"><a href="#CPU权限级别" class="headerlink" title="CPU权限级别"></a>CPU权限级别</h3><p><strong>系统内核层</strong>，又称<strong>零环</strong>（Ring0，简称R0；与此对应的是<strong>3环</strong>，R3，应用层）；实际上是CPU的4个级别，CPU在设计时将CPU的运行级别从内到外分为4个层级R0-R3，R0权限最高依次降低（实际上，现在只区分R0和R3，并没有使用R1和R2）。</p>
 <p><img src="https://gitee.com/Sciurdae/typora-images/raw/master/img/202401021844608.png" srcset="/img/loading.gif" lazyload alt="image-20240102184406550"></p>
 <p>分级的<strong>目的</strong>是为了<strong>保护系统的稳定性和安全性</strong>。通过限制某些操作只能在高权限级别下执行，操作系统可以防止用户级应用程序意外或恶意地修改关键系统资源，进而导致系统崩溃或安全漏洞。</p>
 <p>Windows 体系结构简图：<br><img src="https://gitee.com/Sciurdae/typora-images/raw/master/img/202312261638491.png" srcset="/img/loading.gif" lazyload alt="image-20231226163845412"></p>
