@@ -38,11 +38,9 @@
     }
 
     function attachEvent() {
-        var old = typeof window.onclick === "function" && window.onclick;
-        window.onclick = function (event) {
-            old && old();
+        document.addEventListener("click", function (event) {
             createHeart(event);
-        }
+        });
     }
 
     function createHeart(event) {
