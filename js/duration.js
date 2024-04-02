@@ -24,9 +24,6 @@
       }
       document.getElementById("timeDate").innerHTML = "本站已存活&nbsp"+dnum+"&nbsp天";
       document.getElementById("times").innerHTML = hnum + "&nbsp小时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
-      // 设置字体颜色
-      document.getElementById("timeDate").style.color = "#ff0000"; // 红色
-      document.getElementById("times").style.color = "#00ff00"; // 绿色
     }
   
     update();
