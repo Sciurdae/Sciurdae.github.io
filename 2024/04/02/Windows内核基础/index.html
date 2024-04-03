@@ -47,7 +47,7 @@
 <meta property="og:image" content="https://gitee.com/Sciurdae/typora-images/raw/master/img/202312262020779.png">
 <meta property="og:image" content="https://gitee.com/Sciurdae/typora-images/raw/master/img/202401041702378.png">
 <meta property="article:published_time" content="2024-04-02T12:24:57.713Z">
-<meta property="article:modified_time" content="2024-04-03T01:38:01.431Z">
+<meta property="article:modified_time" content="2024-04-03T03:00:08.956Z">
 <meta property="article:author" content="Sciurdae">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://gitee.com/Sciurdae/typora-images/raw/master/img/202401021844608.png">
@@ -489,19 +489,19 @@
 <p>Windows提供了多种子系统，同时在PE文件格式中的<strong>SubSystem域</strong>指示了可执行文件的子系统类型，即程序应在何种环境下运行；SubSystem域通常包含<strong>一个数字值</strong>，代表不同的子系统类型。</p>
 <p>以下是一些<strong>常见的SubSystem及其对应的子系统</strong>：</p>
 <ol>
-<li><p>**Native (0)**：</p>
+<li><p>Native (0)：</p>
 <p>Native子系统表示该PE文件是一个本地的执行文件，通常是驱动程序或操作系统内核组件。这些文件在操作系统内核模式下运行。</p>
 </li>
-<li><p>**Windows GUI (2)**：</p>
+<li><p>Windows GUI (2)：</p>
 <p>Windows GUI子系统表示该PE文件是一个图形用户界面（GUI）应用程序。它运行在Windows桌面环境中，通常有用户界面和窗口。</p>
 </li>
-<li><p>**Windows CUI (3)**：</p>
+<li><p>Windows CUI (3)：</p>
 <p>Windows CUI子系统表示该PE文件是一个字符用户界面（CUI）应用程序。它通常是命令行应用程序，没有图形界面，用户通过控制台来与之交互。</p>
 </li>
-<li><p>**OS&#x2F;2 CUI (5)**：</p>
+<li><p>OS&#x2F;2 CUI (5)：</p>
 <p>OS&#x2F;2 CUI子系统表示该PE文件是一个OS&#x2F;2字符用户界面应用程序。这种类型的应用程序通常用于运行在IBM OS&#x2F;2环境中。</p>
 </li>
-<li><p>**Posix CUI (7)**：</p>
+<li><p>Posix CUI (7)：</p>
 <p>Posix CUI子系统表示该PE文件是一个POSIX兼容的字符用户界面应用程序。它适用于在Windows上运行UNIX&#x2F;Linux应用程序。</p>
 </li>
 </ol>
@@ -795,6 +795,38 @@
             </div>
 
             
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="waline"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#waline', function() {
+      Fluid.utils.createCssLink('https://cdn.staticfile.org/waline/2.15.5/waline.min.css')
+      Fluid.utils.createScript('https://cdn.staticfile.org/waline/2.15.5/waline.min.js', function() {
+        var options = Object.assign(
+          {"serverURL":"https://blog-comment-5hnhst20m-sciurdaes-projects.vercel.app/","placeholder":"遗憾莫过于难忘你的背影，却找不到你来过的痕迹 ...","path":"window.location.pathname","avatar":"retro","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","highlight":true,"avatarCDN":"","avatarForce":false,"requiredFields":[],"emojiCDN":null,"emojiMaps":null,"anonymous":null},
+          {
+            el: '#waline',
+            path: window.location.pathname
+          }
+        )
+        Waline.init(options);
+        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
+          var imgSelector = '#waline .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
           </article>
         </div>
       </div>
