@@ -29,8 +29,8 @@
     } 
 }
 #subtitle {
-    font-size: 15px;
-    background: linear-gradient(-45deg, #e85427, #edea2c, #23a6d5, #23d5ab);
+    font-size: 40px;
+    background: linear-gradient(-45deg, #e85427, #edea2c, #0513a8, #23d5ab);
     background-size: 400% 400%;
     -webkit-animation: Gradient 10s ease infinite;
     -moz-animation: Gradient 10s ease infinite;
