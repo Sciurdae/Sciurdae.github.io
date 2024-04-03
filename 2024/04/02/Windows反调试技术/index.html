@@ -677,14 +677,14 @@
   <div id="waline"></div>
   <script type="text/javascript">
   const locale = {
-	nick: '昵称(必填)',
-	nickError: '昵称太短了~',
-	placeholder: '可以直接评论哦~',
-	sofa: '评论区空空如也~',
-	refresh: '刷新一下~',
-	login: '登录(可选)',
-	submit: '发布',
-}
+	  nick: '昵称(必填)',
+	  nickError: '昵称太短了~',
+	  placeholder: '可以直接评论哦~',
+	  sofa: '评论区空空如也~',
+	  refresh: '刷新一下~',
+	  login: '登录(可选)',
+	  submit: '发布',
+  }
     Fluid.utils.loadComments('#waline', function() {
       Fluid.utils.createCssLink('https://cdn.staticfile.org/waline/2.15.5/waline.min.css')
       Fluid.utils.createScript('https://cdn.staticfile.org/waline/2.15.5/waline.min.js', function() {
@@ -692,7 +692,8 @@
           {"serverURL":"https://blog-comment-git-main-sciurdaes-projects.vercel.app/","path":"window.location.pathname","avatar":"retro","meta":["nick","mail","link"],"requiredMeta":["nick"],"pageSize":10,"lang":"zh-CN","highlight":true,"avatarCDN":"","avatarForce":false,"requiredFields":[],"emoji":["https://unpkg.com/@waline/emojis@1.2.0/bilibili","https://unpkg.com/@waline/emojis@1.2.0/qq","https://unpkg.com/@waline/emojis@1.2.0/tieba"],"option":{"locale":{"placeholder":"填写数字QQ邮箱可以自动获取QQ头像","login":"登录(可选)"}}},
           {
             el: '#waline',
-            path: window.location.pathname
+            path: window.location.pathname,
+			locale,
           }
         )
         Waline.init(options);
