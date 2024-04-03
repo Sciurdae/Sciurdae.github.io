@@ -103,7 +103,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"sciurdae.online","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":80,"cursorChar":"_","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"left","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"SRfFH0K09R040yFG7bfIbwPN-MdYXbMMI","app_key":"ipbxy4I7kbGQTwmWce2SnvyU","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"sciurdae.online","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":80,"cursorChar":"_","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"left","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"SRfFH0K09R040yFG7bfIbwPN-MdYXbMMI","app_key":"ipbxy4I7kbGQTwmWce2SnvyU","server_url":null,"path":"window.location.pathname","ignore_local":true}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -306,7 +306,7 @@
         
         
         
-          118 分钟
+          142 分钟
         
       </span>
     
@@ -316,7 +316,7 @@
       
         <span id="leancloud-page-views-container" class="post-meta" style="display: none">
           <i class="iconfont icon-eye" aria-hidden="true"></i>
-          阅读次数 <span id="leancloud-page-views"></span> 次
+          <span style='font-size: 1.1rem; color: #ffffff;'>阅读次数 <span id="leancloud-page-views"></span> 次</span>
         </span>
         
       
@@ -365,6 +365,14 @@
         <div id="board">
           <article class="post-content mx-auto">
             <h1 id="seo-header">Windosw内核理论基础</h1>
+            
+              <p id="updated-time" class="note note-info" style="">
+                
+                  
+                    本文最后更新于 2024年4月3日 上午
+                  
+                
+              </p>
             
             
               <div class="markdown-body">
@@ -815,7 +823,7 @@
       Fluid.utils.createCssLink('https://cdn.staticfile.org/waline/2.15.5/waline.min.css')
       Fluid.utils.createScript('https://cdn.staticfile.org/waline/2.15.5/waline.min.js', function() {
         var options = Object.assign(
-          {"serverURL":"https://blog-comment-git-main-sciurdaes-projects.vercel.app/","path":"window.location.pathname","avatar":"retro","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","highlight":true,"avatarCDN":"","avatarForce":false,"requiredFields":[],"emoji":["https://unpkg.com/@waline/emojis@1.2.0/bilibili","https://unpkg.com/@waline/emojis@1.2.0/qq","https://unpkg.com/@waline/emojis@1.2.0/tieba"],"option":{"locale":{"placeholder":"填写数字QQ邮箱可以自动获取QQ头像","login":"登录(可选)"}}},
+          {"serverURL":"https://blog-comment-git-main-sciurdaes-projects.vercel.app/","path":"window.location.pathname","avatar":"retro","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","highlight":true,"avatarCDN":"","avatarForce":false,"requiredFields":[],"emoji":["https://unpkg.com/@waline/emojis@1.2.0/bilibili","https://unpkg.com/@waline/emojis@1.2.0/qq","https://unpkg.com/@waline/emojis@1.2.0/tieba"]},
           {
             el: '#waline',
             path: window.location.pathname,
