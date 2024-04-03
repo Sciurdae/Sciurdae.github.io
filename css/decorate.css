@@ -29,7 +29,8 @@
     } 
 }
 #subtitle {
-    font-size: 40px;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
     background: linear-gradient(-45deg, #e85427, #edea2c, #0513a8, #23d5ab);
     background-size: 400% 400%;
     -webkit-animation: Gradient 10s ease infinite;
