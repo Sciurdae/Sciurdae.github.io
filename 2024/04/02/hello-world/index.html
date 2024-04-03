@@ -447,19 +447,20 @@
   <div id="waline"></div>
   <script type="text/javascript">
   const locale = {
-	  nick: '昵称(必填)',
+	  nick: '昵称',
 	  nickError: '昵称hai没填!',
-	  placeholder: '欢迎交流学习欸~请先输入你的昵称！\n填写QQ邮箱可以获取你的QQ头像同时可以收到邮箱回信提醒o~',
+	  placeholder: '欢迎交流学习欸~请先输入你的昵称！\n填写QQ邮箱可以获取你的QQ头像同时可以收到邮箱回信提醒o~\n匿名请直接发起评论~',
 	  sofa: '评论区空空如( •̀ ω •́ )y~',
 	  refresh: '刷新亿下~',
 	  login: '登录(可选)',
 	  submit: '发布',
+    anonymous: '不愿透露姓名的某人',
   }
     Fluid.utils.loadComments('#waline', function() {
       Fluid.utils.createCssLink('https://cdn.staticfile.org/waline/2.15.5/waline.min.css')
       Fluid.utils.createScript('https://cdn.staticfile.org/waline/2.15.5/waline.min.js', function() {
         var options = Object.assign(
-          {"serverURL":"https://blog-comment-git-main-sciurdaes-projects.vercel.app/","path":"window.location.pathname","avatar":"retro","meta":["nick","mail","link"],"requiredMeta":["nick","mail"],"pageSize":10,"lang":"zh-CN","highlight":true,"avatarCDN":"","avatarForce":false,"requiredFields":[],"emoji":["https://unpkg.com/@waline/emojis@1.2.0/bilibili","https://unpkg.com/@waline/emojis@1.2.0/qq","https://unpkg.com/@waline/emojis@1.2.0/tieba"],"option":{"locale":{"placeholder":"填写数字QQ邮箱可以自动获取QQ头像","login":"登录(可选)"}}},
+          {"serverURL":"https://blog-comment-git-main-sciurdaes-projects.vercel.app/","path":"window.location.pathname","avatar":"retro","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","highlight":true,"avatarCDN":"","avatarForce":false,"requiredFields":[],"emoji":["https://unpkg.com/@waline/emojis@1.2.0/bilibili","https://unpkg.com/@waline/emojis@1.2.0/qq","https://unpkg.com/@waline/emojis@1.2.0/tieba"],"option":{"locale":{"placeholder":"填写数字QQ邮箱可以自动获取QQ头像","login":"登录(可选)"}}},
           {
             el: '#waline',
             path: window.location.pathname,
