@@ -3,9 +3,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN" >
 
-<head>
-  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script> <!-- 添加这一行 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"> <!-- 添加这一行 -->
+
   
 
 <head>
@@ -118,10 +116,8 @@
   
 <meta name="generator" content="Hexo 7.1.1"></head>
 
-</head>
 
 <body><!-- hexo injector body_begin start --><div id="web_bg"></div><!-- hexo injector body_begin end -->
-  <script src="/live2d-widget/autoload.js"></script> 
   
 
   <header>
@@ -398,5 +394,71 @@
   <noscript>
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
-<!-- hexo injector body_end start --><script src="/js/backgroundize.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?0c762af872e1027897225f1a1295b11e"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+  <button id="toggleSoundButton" style="position: fixed; left: 200px; bottom: 200px;">Unmute Sound</button>
+  <audio id="audio1" src="/public/live2dw/assets/snd/01.wav"></audio>
+  <audio id="audio2" src="/public/live2dw/assets/snd/02.wav"></audio>
+  <audio id="audio3" src="/public/live2dw/assets/snd/03.wav"></audio>
+  <audio id="audio4" src="/public/live2dw/assets/snd/04.wav"></audio>
+  <audio id="audio5" src="/public/live2dw/assets/snd/05.wav"></audio>
+  <audio id="audio6" src="/public/live2dw/assets/snd/06.wav"></audio>
+  <audio id="audio7" src="/public/live2dw/assets/snd/07.wav"></audio>
+  <audio id="audio8" src="/public/live2dw/assets/snd/08.wav"></audio>
+  <audio id="audio9" src="/public/live2dw/assets/snd/09.wav"></audio>
+  <audio id="audio10" src="/public/live2dw/assets/snd/10.wav"></audio>
+  <audio id="audio11" src="/public/live2dw/assets/snd/11.wav"></audio>
+  <audio id="audio12" src="/public/live2dw/assets/snd/12.wav"></audio>
+  <audio id="audio13" src="/public/live2dw/assets/snd/13.wav"></audio>
+  <audio id="audio14" src="/public/live2dw/assets/snd/14.wav"></audio>
+  <audio id="audio15" src="/public/live2dw/assets/snd/15.wav"></audio>
+  <audio id="audio16" src="/public/live2dw/assets/snd/16.wav"></audio>
+  <audio id="audio17" src="/public/live2dw/assets/snd/17.wav"></audio>
+  <audio id="audio18" src="/public/live2dw/assets/snd/18.wav"></audio>
+  <audio id="audio19" src="/public/live2dw/assets/snd/19.wav"></audio>
+  <audio id="audio20" src="/public/live2dw/assets/snd/20.wav"></audio>
+  <audio id="audio21" src="/public/live2dw/assets/snd/21.wav"></audio>
+  <audio id="audio22" src="/public/live2dw/assets/snd/22.wav"></audio>
+  <audio id="audio23" src="/public/live2dw/assets/snd/23.wav"></audio>
+  <audio id="audio24" src="/public/live2dw/assets/snd/24.wav"></audio>
+  <audio id="audio25" src="/public/live2dw/assets/snd/25.wav"></audio>
+  <audio id="audio26" src="/public/live2dw/assets/snd/26.wav"></audio>
+  
+  <script>
+   document.addEventListener("DOMContentLoaded", function() {
+    var audioElements = document.querySelectorAll("audio");
+    var muteButton = document.getElementById("toggleSoundButton");
+    var isMuted = true; // 初始状态为静音
+
+    // 初始化所有音频元素的音量为0（静音）
+    audioElements.forEach(function(audio) {
+        audio.volume = 0;
+    });
+
+    // 按钮点击事件处理函数
+    muteButton.addEventListener("click", function() {
+        // 切换静音状态
+        isMuted = !isMuted;
+
+        // 根据静音状态设置音量
+        audioElements.forEach(function(audio) {
+            audio.volume = isMuted ? 0 : 1;
+        });
+
+        // 更新按钮文本
+        muteButton.textContent = isMuted ? "Unmute Sound" : "Mute Sound";
+    });
+});
+  document.addEventListener("click", function(event) {
+    // 获取点击事件的目标元素
+    var target = event.target;
+
+    // 检查点击的目标元素是否是音频元素或者其子元素
+    var audioElement = target.closest("audio");
+    if (audioElement) {
+        console.log("点击触发了音频播放：", audioElement.src);
+        // 这里可以进一步处理音频元素
+    }
+});
+
+  </script>
+<!-- hexo injector body_end start --><script src="/js/backgroundize.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/remu.model.json"},"display":{"position":"left","width":210,"height":420,"hOffset":30,"vOffset":-20},"mobile":{"show":true,"scale":0.5}});</script></body>
 </html>
